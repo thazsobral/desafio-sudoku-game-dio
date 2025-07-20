@@ -16,6 +16,11 @@ public class App {
     public static void main(String[] args) throws Exception {
         
         final var positions = Stream.of(args)
-                                        .collect(Collectors.toMap(k -> k.split(":")[0], v -> v.split(v)));
+                                        .collect(Collectors.toMap(
+                                            k -> k.split(";")[0],
+                                            v -> v.split(";")[1]
+                                        ));
+
+        
     }
 }
