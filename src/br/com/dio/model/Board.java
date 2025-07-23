@@ -25,12 +25,12 @@ public class Board {
                     .flatMap(Collection::stream)
                     .noneMatch(s -> !s.isFixed()
                     &&
-                    nonNull(s.getActal()))) {
+                    nonNull(s.getActual()))) {
             return NON_STARTED;
         } else {
             return spaces.stream()
                             .flatMap(Collection::stream)
-                            .anyMatch(s -> isNull(s.getActal())) 
+                            .anyMatch(s -> isNull(s.getActual())) 
                             ?
                             INCOMPLETE
                             :
@@ -44,9 +44,9 @@ public class Board {
         } else {
             return spaces.stream()
                             .flatMap(Collection::stream)
-                            .anyMatch(s -> nonNull(s.getActal()) 
+                            .anyMatch(s -> nonNull(s.getActual()) 
                             &&
-                            !s.getActal().equals(s.getExpected()));
+                            !s.getActual().equals(s.getExpected()));
         }
     }
 
@@ -56,7 +56,7 @@ public class Board {
         if (space.isFixed()) {
             return false;
         } else {
-            space.setActal(value);
+            space.setActual(value);
             return true;
         }
     }

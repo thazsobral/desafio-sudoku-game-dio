@@ -14,11 +14,11 @@ public class Space {
         }
     }
 
-    public Integer getActal() {
+    public Integer getActual() {
         return actal;
     }
 
-    public void setActal(Integer actal) {
+    public void setActual(Integer actal) {
         if (fixed) {
             return;
         }
@@ -26,7 +26,7 @@ public class Space {
     }
 
     public void clearSpace() {
-        setActal(null);
+        setActual(null);
     }
 
     public int getExpected() {
