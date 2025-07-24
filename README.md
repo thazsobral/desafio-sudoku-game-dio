@@ -1,17 +1,17 @@
-🧩 Sudoku Game
+# 🧩 Sudoku Game
 This is a Java-based Sudoku game project, designed to be run and debugged within Visual Studio Code. The game board is initialized using a specific set of arguments passed directly to the Java application.
 
-✨ Features
+# ✨ Features
 Custom Board Initialization: The game board can be constructed using a string of instructions passed as command-line arguments.
 
 Fixed Cells: Supports marking certain cells as immutable (pre-filled numbers) to define the puzzle.
 
 Interactive Gameplay (Planned/Implied): (Assuming the game will allow user input to solve the puzzle.)
 
-🚀 How to Run
+# 🚀 How to Run
 To get this project up and running on your local machine, follow these steps:
 
-Prerequisites
+## Prerequisites
 Java Development Kit (JDK): Version 11 or higher.
 
 Visual Studio Code: The popular code editor.
@@ -39,7 +39,7 @@ Locate the configuration for your main class (e.g., com.yourproject.sudoku.Game)
 Add or modify the "args" property to include the board instructions as individual string elements.
 
 Here's an example of how your launch.json configuration should look:
-
+```json
 {
     "configurations": [
         {
@@ -134,8 +134,9 @@ Here's an example of how your launch.json configuration should look:
         }
     ]
 }
+```
 
-Run the Application:
+# Run the Application:
 
 Go to the Run and Debug tab in VS Code.
 
