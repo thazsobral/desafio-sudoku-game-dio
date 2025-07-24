@@ -1,7 +1,7 @@
 package br.com.dio.model;
 
 public class Space {
-    private Integer actal;
+    private Integer actual;
     private final int expected;
     private final boolean fixed;
 
@@ -10,19 +10,19 @@ public class Space {
         this.fixed = fixed;
 
         if (fixed) {
-            actal = expected;
+            actual = expected;
         }
     }
 
     public Integer getActual() {
-        return actal;
+        return actual;
     }
 
-    public void setActual(Integer actal) {
+    public void setActual(Integer actual) {
         if (fixed) {
             return;
         }
-        this.actal = actal;
+        this.actual = actual;
     }
 
     public void clearSpace() {
